@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AMIR | فروشگاه آنلاین</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,Arial;background:#f8f6f2;color:#222}
+header{background:#171717;color:white;padding:22px;text-align:center}
+.logo{font-size:32px;font-weight:bold;letter-spacing:4px}
+nav{padding:15px;text-align:center;background:#292929}
+nav a{color:white;text-decoration:none;margin:12px;font-size:13px}
+.hero{background:#302a25;color:white;text-align:center;padding:75px 15px}
+.hero h1{font-size:35px}
+.hero p{line-height:2;color:#ddd}
+.btn{display:inline-block;background:#c5a47e;color:#171717;padding:13px 25px;text-decoration:none;border:0;cursor:pointer}
+h2{text-align:center;margin:35px 0}
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;padding:15px;max-width:900px;margin:auto}
+.product{background:white;text-align:center;padding:15px;border:1px solid #eee}
+.pic{background:#eee9e1;padding:35px;font-size:55px}
+.product h3{font-size:15px}
+.product p{color:#98734e}
+button{background:#222;color:white;border:0;padding:11px 15px;cursor:pointer}
+footer{background:#171717;color:white;text-align:center;padding:30px;line-height:2;margin-top:40px}
+@media(min-width:650px){.products{grid-template-columns:repeat(4,1fr)}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">AMIR.</div>
+<p>استایل خاص برای سلیقه خاص تو</p>
+</header>
+<nav>
+<a href="#home">خانه</a>
+<a href="#products">محصولات</a>
+<a href="#contact">تماس با ما</a>
+</nav>
+<section class="hero" id="home">
+<h1>به فروشگاه امیر خوش آمدید</h1>
+<p>جدیدترین لباس‌ها، کفش‌ها، ساعت‌ها و زیورآلات</p>
+<a class="btn" href="#products">مشاهده محصولات</a>
+</section>
+<h2 id="products">محصولات فروشگاه</h2>
+<div class="products">
+<div class="product">
+<div class="pic">👕</div>
+<h3>لباس شیک</h3>
+<p>برای قیمت تماس بگیرید</p>
+<button onclick="order('لباس شیک')">سفارش محصول</button>
+</div>
+<div class="product">
+<div class="pic">👟</div>
+<h3>کفش اسپرت</h3>
+<p>برای قیمت تماس بگیرید</p>
+<button onclick="order('کفش اسپرت')">سفارش محصول</button>
+</div>
+<div class="product">
+<div class="pic">⌚</div>
+<h3>ساعت مچی</h3>
+<p>برای قیمت تماس بگیرید</p>
+<button onclick="order('ساعت مچی')">سفارش محصول</button>
+</div>
+<div class="product">
+<div class="pic">💍</div>
+<h3>زیورآلات</h3>
+<p>برای قیمت تماس بگیرید</p>
+<button onclick="order('زیورآلات')">سفارش محصول</button>
+</div>
+</div>
+<footer id="contact">
+<h2>AMIR STORE</h2>
+<p>برای ثبت سفارش و اطلاعات بیشتر با ما تماس بگیرید.</p>
+<p>فروشگاه اینترنتی امیر</p>
+</footer>
+<script>
+function order(name){
+alert('برای سفارش '+name+' با فروشگاه تماس بگیرید.');
+}
+</script>
+</body>
+</html>
